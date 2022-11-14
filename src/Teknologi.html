@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8" />
+        <title>Teknologi 1: Læringsmål: Mini projekt</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+                $(function () {
+                       $("#tabs").tabs();
+                       $("#tabs-om-1").tabs();
+                                
+                        $( "#btnRun" ).click(function() 
+                        {
+                                $.ajax({url: "https://api.nationalize.io/?name="+encodeURIComponent($( "#navn" ).val()), success: function(result)
+                                {
+                                        $("#webresult").html("");
+                                        $.each(result.country, function (i) 
+                                        {
+                                        $.each(result.country[i], function (key, val) 
+                                        {
+                                                $("#webresult").append("<div>"+key+": "+val+"</div>");
+                                        });
+                        });
+                                }});
+                        });
+                });
+        </script>
+</head>
+
+<body>
+        <div id="tabs">
+                <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#om-1">Område 1</a></li>
+                        <li><a href="#om-2">Område 2</a></li>
+                        <li><a href="#om-3">Område 3</a></li>
+                        <li><a href="#om-4">Område 4</a></li>
+                        <li><a href="#webs">Webservice</a></li>
+                </ul>
+                <div id="start">
+                        <p><b>Programmet arbejder med de 4 læringsmålsområder</b></p>
+                        <table>
+                                <tr>
+                                        <td>Område 1: Cloud, Operativ systemer, Database.</td>
+                                </tr>
+                                <tr>
+                                        <td>Område 2: Talsystemer, Debug. </td>
+                                </tr>
+                                <tr>
+                                        <td>Område 3: Samtidighedsproblematikker.</td>
+                                </tr>
+                                <tr>
+                                        <td>Område 4: Computernetværk.</td>
+                                </tr>
+                                <tr>
+                                        <td>Webservice: Test område af webservice</td>
+                                </tr>
+                        </table>
+                        <br />
+
+                        Mini projektet er udarbejdet af
+                        <br /><br />
+                        Jeres fuldenavne og KEA e-mail tilføj evt. gruppenavn.
+                        <br /><br />
+                        Afleveringsdato
+        
+                </div>
+                <div id="om-1">
+                        <div id="tabs-om-1">
+                                <ul>
+                                        <li><a href="#sp-1">1</a></li>
+                                        <li><a href="#sp-2">2</a></li>
+                                        <li><a href="#sp-3">3</a></li>
+                                        <li><a href="#sp-4">4</a></li>
+                                        <li><a href="#sp-5">5</a></li>
+                                        <li><a href="#sp-6">6</a></li>
+                                        <li><a href="#sp-7">7</a></li>
+                                        <li><a href="#sp-8">8</a></li>
+                                </ul>
+                                <p>Spørgsmål</p> <br/>
+
+                             <div id="sp-1">
+                                        <p>
+                                                1.Beskriv en computers hardware.<br/>
+                                        </p>
+                                                <b>SVAR:</b></br>
+                                        <p>
+                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
+                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
+                                                køleranlæg (Fans) og Kabinettet.
+                                        </p>
+                             </div>
+
+                                <div id="sp-2">
+                                        <p>
+                                                2. Beskriv Azure Cloud og hvad du kan bruge den til.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                Microsoft Azure Cloud er en form for hub, hvor man kan sætte servers, databaser <br/>
+                                                VM (Virtual Machines) og mange flere services gennem en skyen. Man kan <br/>
+                                                tilpasse disse services, så det passer den opgave man gerne vil bruge dem til.<br/>
+                                        </p>
+                             </div>
+
+                                <div id="sp-3">
+                                        <p>
+                                                3. Hvilke typer harddiske findes i en computer og hvad er forskellen på dem?<br/>
+                                        </p>
+                                        <b>SVAR:</b><br/>
+                                        <p>
+                                                Der er 3 forskellige HDDs (Hard Drives), SATA, SSD og NVMe.<br/>
+                                                SATA (Serial Advanced Technology Attachment), er nok det billigste<br/>
+                                                form for opbevaring af filer. Meget plads for pengene, men ikke så brugbart<br/>
+                                                til mindre medier, såsom laptops, da SATAer fylder meget.<br/>
+
+                                                SSD (Solid State Drive) er mindre og hurtigere, men dyrere end SATA.<br/>
+
+                                                NVMe (Non-Volatile Memory Express) er det hurtigste form for dataopbevaring,<br/>
+                                                den er en form for SSD, som sættes på selve motherboardet.<br/>
+                                                Det er også det dyreste harddisk, som kan købes<br/>
+                                        </p>
+                             </div>
+
+                                <div id="sp-4">
+                                        <p>
+                                                4. Hvilke typer busser findes der i en computer?<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                Address bus; sender Memory addresser, til andre komponenter såsom<br/>
+                                                harddiske og andre medier såsom en skærm eller mus.
+                                                Data bus; sender data fra CPU til andre komponenter.<br/>
+                                                Control bus; Sender "control" signaler til andre komponenter<br/>
+                                        </p>
+                             </div>
+
+                                <div id="sp-5">
+                                        <p>
+                                                5. Computernetværk: Hvad er forskellen på IP og MAC?<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+
+                                        </p>
+                             </div>
+
+                                <div id="sp-6">
+                                        <p>
+                                                6. Hvilke typer kategorier findes der for en PSU og hvad betyder de?<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+
+                                        </p>
+                             </div>
+
+                                <div id="sp-7">
+                                        <p>
+                                                7. Hvad er forskellen på RAM og Harddisk?<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+
+                                        </p>
+                             </div>
+
+                                <div id="sp-8">
+                                        <p>
+                                                8. Hvad er et DBMS MySQL og hvad kan det bruges til?<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+
+                                        </p>
+                             </div>
+
+
+                        </div>
+                </div>
+                <div id="om-2">
+                        <p>Spørgsmål og svar</p>
+                </div>
+                <div id="om-3">
+                        <p>Spørgsmål og svar</p>
+                </div>
+                <div id="om-4">
+                        <p>Spørgsmål og svar</p>
+                </div>
+                <div id="webs">
+                        <table>
+                                <tr>
+                                        <td>Navn</td><td style="padding-left: 20px;padding-right: 20px;"><input id="navn" alt="Klik på knappen og se svaret fra webserveren" title="Klik på knappen og se svaret fra webserveren"></td><td><button id="btnRun">Test webservice</button></td>
+                                </tr>
+                        </table>
+                        <br/>
+                        <br/>
+                        <b>Svar fra webservice</b>
+                        <div id="webresult"></div>
+                </div>
+
+        </div>
+
+</body>
+
+</html>
