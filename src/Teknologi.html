@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
         <meta charset="utf-8" />
@@ -62,13 +62,18 @@
                         </table>
                         <br />
 
-                        Mini projektet er udarbejdet af
+                        Mini projektet er udarbejdet af:
+                        <br />
+                        Kristian Wede (https://github.com/KristianWede) </br>
+                        <br />
+                        kris79s4@stud.kea.dk
                         <br /><br />
-                        Jeres fuldenavne og KEA e-mail tilføj evt. gruppenavn.
-                        <br /><br />
-                        Afleveringsdato
+                        Afleveringsdato: 14/12/2022
         
                 </div>
+
+
+
                 <div id="om-1">
                         <div id="tabs-om-1">
                                 <ul>
@@ -81,6 +86,7 @@
                                         <li><a href="#sp-7">7</a></li>
                                         <li><a href="#sp-8">8</a></li>
                                 </ul>
+
                                 <p>Spørgsmål</p> <br/>
 
                              <div id="sp-1">
@@ -124,7 +130,7 @@
                                                 den er en form for SSD, som sættes på selve motherboardet.<br/>
                                                 Det er også det dyreste harddisk, som kan købes<br/>
                                         </p>
-                             </div>
+                                </div>
 
                                 <div id="sp-4">
                                         <p>
@@ -145,6 +151,11 @@
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
+                                                IP (Internet Protocol) og MAC (Media Access Control)<br/>
+                                                er forskellige i den sans at MAC er en lokal adresse til en computer, telefon el. lign. <br/>
+                                                Den kan ikke ændres, og kommer med mediet som er produceret.<br/>
+                                                En IP adresse er en global adresse til den router som er tilsluttet til internettet.<br/>
+                                                Den kan godt ændres.
 
                                         </p>
                              </div>
@@ -155,7 +166,9 @@
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
-
+                                                En PSU (Power Supply Unit) kan købes i form af forskellige typer,</br>
+                                                (Bronze, Sølv, Glud, Platin og Diamant), det grundlæggende forskel er</br>
+                                                at Sølv bruger strømmen bedre end Bronze, Guld er bedre end Sølv osv.
                                         </p>
                              </div>
 
@@ -165,7 +178,10 @@
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
-
+                                                RAM (Random Access Memory) er en form for kortvarig opbevaring af data som</br>
+                                                bliver brugt af CPUen, den er meget hurtig, men er derfor ikke optimeret til </br>
+                                                at holde så meget information (i hvert fald ikke billigt).</br>
+                                                En harddisk er meget langsommere, men kan dog holde meget mere information.
                                         </p>
                              </div>
 
@@ -175,19 +191,204 @@
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
-
+                                                En DBMS (Database Management System), er en form for editor,<br/>
+                                                som kan tilgå en database i form af Queries, som gøres med programmeringssprog såsom mySQL.
                                         </p>
                              </div>
 
+                        </div>
+
+                </div>
+
+                <div id="om-2">
+                        <div id="tabs-om-2">
+                                <ul>
+                                        <li><a href="#2sp-1">1</a></li>
+                                        <li><a href="#2sp-2">2</a></li>
+                                        <li><a href="#2sp-3">3</a></li>
+                                        <li><a href="#2sp-4">4</a></li>
+                                        <li><a href="#2sp-5">5</a></li>
+
+                                </ul>
+
+                                <p>Spørgsmål og svar</p>
+
+                                <div id="2sp-1">
+                                        <p>
+                                                1.Forklar hvad vi kan bruge følgende talsystemer til samt deres navne:</br>
+                                                • 16–talsystemet</br>
+                                                • 10–talsystemet</br>
+                                                • 2–talsystemet<br/>
+                                        </p>
+
+                                        <b>SVAR:</b></br>
+
+                                        <p>
+                                                16-tal systemet hedder Hexadecimal tal, det består af 16 forskellige tegn i ét felt (0-9, a-f).</br>
+                                                og tegnet efter det første vil blive ganget med det første; så 5F vil have en værdi på (5*15 = 75).</br>
+                                                Talsystemet bliver brugt til bla. hukommelsesadresser til processoren i en computer, da den kan have meget </br>
+                                                høje tal i en meget kort beskrivelse.</br>
+                                                </br>
+                                                10-tal systemet hedder Decimal tal, det består af 10 forskellige tegn i ét felt (0-9).</br>
+                                                Talsystemet bliver brugt som det standarde talsystem i matematik og læsning.</br>
+                                                </br>
+                                                2-tal systemet hedder det binære talsystem. Det består af 2 forskellige tegn i ét felt (0-1).</br>
+                                                Det bliver brugt som det laveste abskrakte form for sprog til computere. Processoren arbejder </br>
+                                                med binære tal, samt hele computeren med logic gates. Enten er et signal tændt (1), eller slukket (0)</br>
+                                                og sammen med logic gates kan processoren udarbejde logik som får computeren til at køre.</br>
+                                        </p>
+                                </div>
+
+                                <div id="2sp-2">
+                                        <p>
+                                                2. Forklar hvordan man regner mellem binær og decimal.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                For at beregne decimal til binær skal man dividere hele tallet med 2, for hver gang at divisionen har en rest,</br>
+                                                skal det næste konverteret binære tal være 1, og 0 hvis der ikke er nogen rest. Denne division med 2 fortsættes indtil</br>
+                                                tallet når enten 1 eller 0. </br>
+                                                EKSEMPEL; TALLET 13: (13/2 = 6(1 rest)) = 1 | (6/2 = 3(0 rest)) = 01 | (3/2 = 1(1 rest)) = 101 | (1/2 = 0(1 rest)) = 1101.</br>
+                                                </br>
+                                                For at beregne binær til decimal skal man kigge på pladserne i det binære tal, tage et 2 tal, og så opløfte det i pladsen</br>
+                                                (starter i 0' plads). Bagefter ganges det med det binære tal som ligger på den plads. </br>
+                                                Når det er gjort, går man videre til næste binære tal. Når alle binære tal er gået igennem, plusses alle de beregnet tal med hinanden.</br>
+                                                EKSEMPEL; TALLET 11100: 2^0 * 0 = 0 | 2^1 * 0 = 0 | 2^2 * 1 = 4 | 2^3 * 1 = 8 | 2^4 * 1 = 16 | 0+0+4+8+16 = 28.</br>
+                                        </p>
+                                </div>
+
+                                <div id="2sp-3">
+                                        <p>
+                                                3. Forklar hvordan man regner mellem binær og hexadecimal.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                For at beregne mellem binær og hexadecimal tal skal man først konvertere dem til decimaltal som et medium,</br>
+                                                før at man gør det.</br>
+                                                </br>
+                                                For at beregne fra decimaltal til hexadecimal, skal det samme gøres som beregningen fra binære tal, bare hvor resten</br>
+                                                skal være modulus af 16. Resten (alt under 1, så f.eks 0.7) skal ganges med 16 for at finde hexadecimal cifret, og så sat som første ciffer</br>
+                                                Det samme gøres med det første resultat med divisionen af 16, bare husk at "smide" resten væk. (f.eks 70.7 = 70)</br>
+                                                EKSEMPEL; DECIMAL 1128: </br>
+                                                1128/16 = 70,5 | 0,5 * 16 = 8 </br>
+                                                70/16 = 4.375 | 0,375 * 16 = 6 </br>
+                                                4/16 = 0,25 | 0,25 * 16 = 4 </br>
+                                                </br>
+                                                Hexadecimalet af decimaltallet 1128 er 468.</br>
+                                                </br>
+                                                For at beregne hexadecimal tal til decimaltal skal man bare konvertere 16 talsystemet til et decimal ciffer. </br>
+                                                Bagefter er fremgangsmåden næsten præcist det samme som med binær til decimaltal.</br>
+                                                EKSEMPEL; HEXADECIMAL C9:</br>
+                                                9 = 9 * 16^0 = 9</br>
+                                                C = 12 * 16^1 = 192</br>
+                                                192 + 9 = 201.</br>
+                                                Decimaltallet af Hexadecimalet C9 er 201.</br>
+                                        </p>
+                                </div>
+
+                                <div id="2sp-4">
+                                        <p>
+                                                4. Forklar hvad forkortelserne DDL og DML og hvad de bruges til.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                DDL (Data Definition Language) defineres som en del af SQL, hvor data bliver defineret eller redifineret i en database.</br>
+                                                For eksempel, en table kunne have variabler med de forkerte datatyper, som bliver så ændret, det er "definition".</br>
+                                                </br>
+                                                DML (Data Manipulation Language) defineres som en del af SQL, hvor dataen bliver manipuleret med, ændret eller tilføjet.</br>
+                                                </br>
+                                        </p>
+                                </div>
+
+                                <div id="2sp-5">
+                                        <p>
+                                                5. Beskriv hvordan man opretter et MySQL DBMS på Azure og hvad vi kan bruge sådan et til.</br>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                For at oprette en Database Management System til MySQL, skal der gøres nogle få ting først-</br>
+                                                1. Opret en bruger og log på med din skole/universitet.</br>
+                                                2. På søgebaren, skriv "mySQL", så klik på "Azure Database for MySQL servers"</br>
+                                                3. Tryk på "Create" med en stor +</br>
+                                                4. Vælg de anbefalet settings og tryk "Create"</br>
+                                                5. Under Subscription, vælg "Azure for Students.</br>
+                                                6. Vælg en Resource Group (Hvis du ikke har én skal du lave en først)</br>
+                                                7. Vælg en Server navn.</br>
+                                                8. Vælg en Region tættest på dig.</br>
+                                                9. Vælg 5.7 MySQL Version.</br>
+                                                10. Vælg "For development or hobby projects" Workload type.</br>
+                                                11. Have high availablility fra.</br>
+                                                12. Lav en Admin account med en username og password.</br>
+                                                13. Insæt en Firewall navn med start IP address til 0.0.0.0 og end til 255.255.255.255 .</br>
+                                        </p>
+                                </div>
+
 
                         </div>
-                </div>
-                <div id="om-2">
-                        <p>Spørgsmål og svar</p>
+
                 </div>
                 <div id="om-3">
-                        <p>Spørgsmål og svar</p>
+                        <div id="tabs-om-3">
+                                <ul>
+                                        <li><a href="#3sp-1">1</a></li>
+                                        <li><a href="#3sp-2">2</a></li>
+                                        <li><a href="#3sp-3">3</a></li>
+                                        <li><a href="#3sp-4">4</a></li>
+                                </ul>
+                                <p>Spørgsmål og svar</p>
+
+                                <div id="3sp-1">
+                                        <p>
+                                                1.Beskriv en computers hardware.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
+                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
+                                                køleranlæg (Fans) og Kabinettet.
+                                        </p>
+                                </div>
+
+                                <div id="3sp-2">
+                                        <p>
+                                                1.Beskriv en computers hardware.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
+                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
+                                                køleranlæg (Fans) og Kabinettet.
+                                        </p>
+                                </div>
+
+                                <div id="3sp-3">
+                                        <p>
+                                                1.Beskriv en computers hardware.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
+                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
+                                                køleranlæg (Fans) og Kabinettet.
+                                        </p>
+                                </div>
+
+                                <div id="3sp-4">
+                                        <p>
+                                                1.Beskriv en computers hardware.<br/>
+                                        </p>
+                                        <b>SVAR:</b></br>
+                                        <p>
+                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
+                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
+                                                køleranlæg (Fans) og Kabinettet.
+                                        </p>
+                                </div>
+
+                        </div>
+
                 </div>
+
                 <div id="om-4">
                         <p>Spørgsmål og svar</p>
                 </div>
