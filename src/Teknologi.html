@@ -12,7 +12,10 @@
                 $(function () {
                        $("#tabs").tabs();
                        $("#tabs-om-1").tabs();
-                                
+                        $("#tabs-om-2").tabs();
+                        $("#tabs-om-3").tabs();
+                        $("#tabs-om-4").tabs();
+
                         $( "#btnRun" ).click(function() 
                         {
                                 $.ajax({url: "https://api.nationalize.io/?name="+encodeURIComponent($( "#navn" ).val()), success: function(result)
@@ -267,7 +270,7 @@
                                                 før at man gør det.</br>
                                                 </br>
                                                 For at beregne fra decimaltal til hexadecimal, skal det samme gøres som beregningen fra binære tal, bare hvor resten</br>
-                                                skal være modulus af 16. Resten (alt under 1, så f.eks 0.7) skal ganges med 16 for at finde hexadecimal cifret, og så sat som første ciffer</br>
+                                                skal være modulus af 16. Resten (alt under 1, så fx 0.7) skal ganges med 16 for at finde hexadecimal cifret, og så sat som første ciffer</br>
                                                 Det samme gøres med det første resultat med divisionen af 16, bare husk at "smide" resten væk. (f.eks 70.7 = 70)</br>
                                                 EKSEMPEL; DECIMAL 1128: </br>
                                                 1128/16 = 70,5 | 0,5 * 16 = 8 </br>
@@ -317,9 +320,9 @@
                                                 8. Vælg en Region tættest på dig.</br>
                                                 9. Vælg 5.7 MySQL Version.</br>
                                                 10. Vælg "For development or hobby projects" Workload type.</br>
-                                                11. Have high availablility fra.</br>
+                                                11. Have high availability fra.</br>
                                                 12. Lav en Admin account med en username og password.</br>
-                                                13. Insæt en Firewall navn med start IP address til 0.0.0.0 og end til 255.255.255.255 .</br>
+                                                13. Indsæt en Firewall navn med start IP address til 0.0.0.0 og end til 255.255.255.255 .</br>
                                         </p>
                                 </div>
 
@@ -339,7 +342,7 @@
 
                                 <div id="3sp-1">
                                         <p>
-                                                1.Beskriv en computers hardware.<br/>
+                                                1. Beskriv hvad der gør et problem til et samtidighedsproblem gerne ift. jeres projekt.<br/>
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
@@ -351,7 +354,7 @@
 
                                 <div id="3sp-2">
                                         <p>
-                                                1.Beskriv en computers hardware.<br/>
+                                                2. Beskriv en type af samtidighedsproblemer og gerne praktisk.<br/>
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
@@ -363,25 +366,23 @@
 
                                 <div id="3sp-3">
                                         <p>
-                                                1.Beskriv en computers hardware.<br/>
+                                                3. Findes der nogle standard løsninger til at løse samtidighedsproblemer på?<br/>
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
-                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
-                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
-                                                køleranlæg (Fans) og Kabinettet.
+
                                         </p>
                                 </div>
 
                                 <div id="3sp-4">
                                         <p>
-                                                1.Beskriv en computers hardware.<br/>
+                                                4. Beskriv Deadlock.<br/>
                                         </p>
                                         <b>SVAR:</b></br>
                                         <p>
-                                                En computer består af mange forskellige komponenter; en PSU (Power Supply Unit),</br>
-                                                en, GPU (Graphics Processing Unit), en CPU (Central Processing Unit), en Motherboard, </br>
-                                                køleranlæg (Fans) og Kabinettet.
+                                                Et Deadlock er når to eller flere processer, som skal bruge noget i et program eller et materiale i det virkelige liv,</br>
+                                                ender op med at vente på hinanden til færdiggøre processen, men i det at begge venter på hinanden og gør intet for at færdiggøre det,</br>
+                                                sidder de så fast.
                                         </p>
                                 </div>
 
